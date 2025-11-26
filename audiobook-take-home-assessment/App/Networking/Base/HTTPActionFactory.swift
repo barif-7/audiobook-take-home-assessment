@@ -19,3 +19,17 @@ struct HTTPActionFactory {
         self.config = config
     }
 }
+
+extension HTTPActionFactory {
+    func makeBestPodcastsAction(
+        genreId: Int,
+        page: Int
+    ) -> PodcastListHTTPAction {
+        PodcastListHTTPAction(
+            baseURL: config.baseURL,
+            apiKey: config.apiKey,
+            genreId: genreId,
+            page: page
+        )
+    }
+}
