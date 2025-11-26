@@ -12,7 +12,8 @@ final class PodcastListViewController: UIViewController {
     // MARK: - Dependencies
     private let presenter: PodcastlistPresenter
     
-    // TODO: - Create PodcastListView and ListView abstraction
+    // MARK: - UI
+    private let listView = PodcastListView()
     
     // MARK: - Init
     init(presenter: PodcastlistPresenter) {
@@ -24,14 +25,43 @@ final class PodcastListViewController: UIViewController {
             guard let self else { return }
             self.apply(state: viewState)
         }
+        
+        // Subscribe to the view's events (selection, pagination, etc.)
+        listView.eventPublisher.sink { [weak self] event in
+            guard let self else { return }
+            switch event {
+            case .didSelect(let id):
+                self.presenter.handle(.didSelectPodcast(id: id))
+            case .loadNextPageRequested:
+                self.presenter.handle(.loadNextPageRequested)
+            }
+        }.store(in: &cancellables)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Lifecycle
+    
+    private var cancellables: Set<AnyCancellable> = []
+    
+    override func loadView() {
+        view = listView
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
 
+// MARK: - Private
 extension PodcastListViewController {
-    // TODO: - Fill out once PodcastListView is added.
-    fileprivate func apply(state: PodcastListViewState) {}
+    fileprivate func apply(state: PodcastListViewState) {
+        guard !state.items.isEmpty else {
+            listView.showMessage("No Podcasts Found")
+            return
+        }
+        listView.items = state.items
+    }
 }

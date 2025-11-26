@@ -8,7 +8,9 @@
 import Foundation
 
 struct PodcastListViewState {
-    var items: [PodcastListItem]
+    let isLoading: Bool
+    let items: [PodcastListItem]
+    let errorMessage: String?
 }
 
 final class PodcastlistPresenter {
@@ -24,9 +26,33 @@ final class PodcastlistPresenter {
     
     func handle(_ event: PodcastListEvent) {
         switch event {
-        case .didSelectPodcast(let id): print(id)
-        case .loadNextPageRequested: break
+        case .didSelectPodcast(let id):
+            interactor.handle(.didSelectPodcast(id: id))
+        case .loadNextPageRequested:
+            onStateChange?(
+                PodcastListViewState(
+                    isLoading: true,
+                    items: mapPodcasts(
+                        interactor.dataStore,
+                        favoriteIDs: interactor.currentFavorites
+                    ),
+                    errorMessage: nil
+                )
+            )
         case .selectedPodcast(_): break
+        }
+    }
+    
+    // MARK: - Mapping
+    private func mapPodcasts(_ podcasts: [Podcast], favoriteIDs: Set<String>?) -> [PodcastListItem] {
+        podcasts.map { podcast in
+            PodcastListItem(
+                id: podcast.id,
+                title: podcast.title,
+                subtitle: podcast.publisher,
+                thumbnailURL: podcast.thumbnail,
+                isFavorite: favoriteIDs?.contains(podcast.id) ?? false
+            )
         }
     }
 }
