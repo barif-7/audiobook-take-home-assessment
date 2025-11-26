@@ -21,6 +21,13 @@ final class PodcastListFeature: RootFeature {
         self.favoritesStore = favoritesStore
     }
     
+    // MARK: - Constructors
+    private lazy var interactor: PodcastListInteractor = {
+       return PodcastListInteractor(
+        favoritesStore: favoritesStore
+       )
+    }()
+    
     // MARK: - RootFeature Conformance
     
     func make() -> UIViewController {
