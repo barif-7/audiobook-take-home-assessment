@@ -16,6 +16,11 @@ enum PodcastListEvent {
     case selectedPodcast(podcast: Podcast)
 }
 
+enum PodcastListViewEvent {
+    case didSelect(id: String)
+    case loadNextPageRequested
+}
+
 struct PodcastListItem {
     let id: String
     let title: String
