@@ -21,9 +21,9 @@ final class PodcastListFeature: RootFeature {
         self.favoritesStore = favoritesStore
     }
     
-    // MARK: - Constructors
+    // MARK: - Feature Components
     private lazy var interactor: PodcastListInteractor = {
-       return PodcastListInteractor(
+       PodcastListInteractor(
         favoritesStore: favoritesStore
        )
     }()
