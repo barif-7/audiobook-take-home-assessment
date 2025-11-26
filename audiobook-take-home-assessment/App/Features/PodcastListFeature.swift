@@ -30,7 +30,7 @@ final class PodcastListFeature: RootFeature {
     }()
     
     private lazy var presenter: PodcastlistPresenter = {
-        PodcastlistPresenter()
+        PodcastlistPresenter(interactor: interactor)
     }()
     
     lazy var viewController: PodcastListViewController = {

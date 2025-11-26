@@ -8,8 +8,6 @@
 import Foundation
 
 enum PodcastListEvent {
-    /// User requested a full reload (initial load / pull-to-refresh).
-    case refreshRequested
     /// User tapped on a podcast cell.
     case didSelectPodcast(id: String)
     /// User scrolled near the bottom and wants the next page.
