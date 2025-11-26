@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FCCC99AC2ED6CBDD0016937C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCCC998D2ED6CBDB0016937C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCCC99942ED6CBDB0016937C;
+			remoteInfo = "audiobook-take-home-assessment";
+		};
+		FCCC99B62ED6CBDD0016937C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCCC998D2ED6CBDB0016937C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCCC99942ED6CBDB0016937C;
+			remoteInfo = "audiobook-take-home-assessment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCCC99952ED6CBDB0016937C /* audiobook-take-home-assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "audiobook-take-home-assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCC99AB2ED6CBDD0016937C /* audiobook-take-home-assessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "audiobook-take-home-assessmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCC99B52ED6CBDD0016937C /* audiobook-take-home-assessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "audiobook-take-home-assessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FCCC99BD2ED6CBDD0016937C /* Exceptions for "audiobook-take-home-assessment" folder in "audiobook-take-home-assessment" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FCCC99942ED6CBDB0016937C /* audiobook-take-home-assessment */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FCCC99972ED6CBDB0016937C /* audiobook-take-home-assessment */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FCCC99BD2ED6CBDD0016937C /* Exceptions for "audiobook-take-home-assessment" folder in "audiobook-take-home-assessment" target */,
+			);
+			path = "audiobook-take-home-assessment";
+			sourceTree = "<group>";
+		};
+		FCCC99AE2ED6CBDD0016937C /* audiobook-take-home-assessmentTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "audiobook-take-home-assessmentTests";
+			sourceTree = "<group>";
+		};
+		FCCC99B82ED6CBDD0016937C /* audiobook-take-home-assessmentUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "audiobook-take-home-assessmentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCCC99922ED6CBDB0016937C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC99A82ED6CBDD0016937C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC99B22ED6CBDD0016937C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCCC998C2ED6CBDB0016937C = {
+			isa = PBXGroup;
+			children = (
+				FCCC99972ED6CBDB0016937C /* audiobook-take-home-assessment */,
+				FCCC99AE2ED6CBDD0016937C /* audiobook-take-home-assessmentTests */,
+				FCCC99B82ED6CBDD0016937C /* audiobook-take-home-assessmentUITests */,
+				FCCC99962ED6CBDB0016937C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCCC99962ED6CBDB0016937C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC99952ED6CBDB0016937C /* audiobook-take-home-assessment.app */,
+				FCCC99AB2ED6CBDD0016937C /* audiobook-take-home-assessmentTests.xctest */,
+				FCCC99B52ED6CBDD0016937C /* audiobook-take-home-assessmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCCC99942ED6CBDB0016937C /* audiobook-take-home-assessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCC99BE2ED6CBDD0016937C /* Build configuration list for PBXNativeTarget "audiobook-take-home-assessment" */;
+			buildPhases = (
+				FCCC99912ED6CBDB0016937C /* Sources */,
+				FCCC99922ED6CBDB0016937C /* Frameworks */,
+				FCCC99932ED6CBDB0016937C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FCCC99972ED6CBDB0016937C /* audiobook-take-home-assessment */,
+			);
+			name = "audiobook-take-home-assessment";
+			packageProductDependencies = (
+			);
+			productName = "audiobook-take-home-assessment";
+			productReference = FCCC99952ED6CBDB0016937C /* audiobook-take-home-assessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCCC99AA2ED6CBDD0016937C /* audiobook-take-home-assessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCC99C32ED6CBDD0016937C /* Build configuration list for PBXNativeTarget "audiobook-take-home-assessmentTests" */;
+			buildPhases = (
+				FCCC99A72ED6CBDD0016937C /* Sources */,
+				FCCC99A82ED6CBDD0016937C /* Frameworks */,
+				FCCC99A92ED6CBDD0016937C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCCC99AD2ED6CBDD0016937C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FCCC99AE2ED6CBDD0016937C /* audiobook-take-home-assessmentTests */,
+			);
+			name = "audiobook-take-home-assessmentTests";
+			packageProductDependencies = (
+			);
+			productName = "audiobook-take-home-assessmentTests";
+			productReference = FCCC99AB2ED6CBDD0016937C /* audiobook-take-home-assessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCCC99B42ED6CBDD0016937C /* audiobook-take-home-assessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCC99C62ED6CBDD0016937C /* Build configuration list for PBXNativeTarget "audiobook-take-home-assessmentUITests" */;
+			buildPhases = (
+				FCCC99B12ED6CBDD0016937C /* Sources */,
+				FCCC99B22ED6CBDD0016937C /* Frameworks */,
+				FCCC99B32ED6CBDD0016937C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCCC99B72ED6CBDD0016937C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FCCC99B82ED6CBDD0016937C /* audiobook-take-home-assessmentUITests */,
+			);
+			name = "audiobook-take-home-assessmentUITests";
+			packageProductDependencies = (
+			);
+			productName = "audiobook-take-home-assessmentUITests";
+			productReference = FCCC99B52ED6CBDD0016937C /* audiobook-take-home-assessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCCC998D2ED6CBDB0016937C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					FCCC99942ED6CBDB0016937C = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					FCCC99AA2ED6CBDD0016937C = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = FCCC99942ED6CBDB0016937C;
+					};
+					FCCC99B42ED6CBDD0016937C = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = FCCC99942ED6CBDB0016937C;
+					};
+				};
+			};
+			buildConfigurationList = FCCC99902ED6CBDB0016937C /* Build configuration list for PBXProject "audiobook-take-home-assessment" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCCC998C2ED6CBDB0016937C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FCCC99962ED6CBDB0016937C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCCC99942ED6CBDB0016937C /* audiobook-take-home-assessment */,
+				FCCC99AA2ED6CBDD0016937C /* audiobook-take-home-assessmentTests */,
+				FCCC99B42ED6CBDD0016937C /* audiobook-take-home-assessmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCCC99932ED6CBDB0016937C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC99A92ED6CBDD0016937C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC99B32ED6CBDD0016937C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCCC99912ED6CBDB0016937C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC99A72ED6CBDD0016937C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCC99B12ED6CBDD0016937C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCCC99AD2ED6CBDD0016937C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCCC99942ED6CBDB0016937C /* audiobook-take-home-assessment */;
+			targetProxy = FCCC99AC2ED6CBDD0016937C /* PBXContainerItemProxy */;
+		};
+		FCCC99B72ED6CBDD0016937C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCCC99942ED6CBDB0016937C /* audiobook-take-home-assessment */;
+			targetProxy = FCCC99B62ED6CBDD0016937C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FCCC99BF2ED6CBDD0016937C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQB55XPTG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "audiobook-take-home-assessment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basilarif.audiobook-take-home-assessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCCC99C02ED6CBDD0016937C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQB55XPTG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "audiobook-take-home-assessment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basilarif.audiobook-take-home-assessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCCC99C12ED6CBDD0016937C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = UQB55XPTG7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCCC99C22ED6CBDD0016937C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = UQB55XPTG7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCCC99C42ED6CBDD0016937C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQB55XPTG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basilarif.audiobook-take-home-assessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/audiobook-take-home-assessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/audiobook-take-home-assessment";
+			};
+			name = Debug;
+		};
+		FCCC99C52ED6CBDD0016937C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQB55XPTG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basilarif.audiobook-take-home-assessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/audiobook-take-home-assessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/audiobook-take-home-assessment";
+			};
+			name = Release;
+		};
+		FCCC99C72ED6CBDD0016937C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQB55XPTG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basilarif.audiobook-take-home-assessmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "audiobook-take-home-assessment";
+			};
+			name = Debug;
+		};
+		FCCC99C82ED6CBDD0016937C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UQB55XPTG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "basilarif.audiobook-take-home-assessmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "audiobook-take-home-assessment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCCC99902ED6CBDB0016937C /* Build configuration list for PBXProject "audiobook-take-home-assessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCC99C12ED6CBDD0016937C /* Debug */,
+				FCCC99C22ED6CBDD0016937C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCC99BE2ED6CBDD0016937C /* Build configuration list for PBXNativeTarget "audiobook-take-home-assessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCC99BF2ED6CBDD0016937C /* Debug */,
+				FCCC99C02ED6CBDD0016937C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCC99C32ED6CBDD0016937C /* Build configuration list for PBXNativeTarget "audiobook-take-home-assessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCC99C42ED6CBDD0016937C /* Debug */,
+				FCCC99C52ED6CBDD0016937C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCC99C62ED6CBDD0016937C /* Build configuration list for PBXNativeTarget "audiobook-take-home-assessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCC99C72ED6CBDD0016937C /* Debug */,
+				FCCC99C82ED6CBDD0016937C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCCC998D2ED6CBDB0016937C /* Project object */;
+}
