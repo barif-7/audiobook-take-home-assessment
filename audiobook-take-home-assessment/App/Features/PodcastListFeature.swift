@@ -8,10 +8,22 @@
 import UIKit
 
 final class PodcastListFeature: RootFeature {
-    func make() -> UIViewController {
-        // TODO: - Replace generic UIViewController
-        return UIViewController()
+    // MARK: - Dependencies
+    private let router: PodcastListRouterInterface
+    private let favoritesStore: FavoritesStoreInterface
+    
+    // MARK: - Initializer
+    init(
+        router: PodcastListRouterInterface,
+        favoritesStore: FavoritesStoreInterface
+    ) {
+        self.router = router
+        self.favoritesStore = favoritesStore
     }
     
-    init() {}
+    // MARK: - RootFeature Conformance
+    
+    func make() -> UIViewController {
+        return UIViewController()
+    }
 }

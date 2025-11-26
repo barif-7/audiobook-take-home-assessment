@@ -18,9 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         
-        // TODO: - Build any dependencies to inject as HomeViewController will be the single source of truth & the point of entry for any feature class.
-        
-        let rootFeature: RootFeature = PodcastListFeature()
+        let rootFeature: RootFeature = buildPodcastListFeature()
         
         let rootVC = HomeViewController(
             rootFeature: rootFeature
@@ -31,7 +29,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.makeKeyAndVisible()
     }
     
-    // MARK: - Conformances
+    private func buildPodcastListFeature() -> PodcastListFeature {
+        // Build the router (navigation controller will be provided by the feature at make() time)
+        let router = PodcastListRouter(navigationController: nil)
+        let favoritesStore = FavoritesStore()
+        
+        return PodcastListFeature(
+            router: router,
+            favoritesStore: favoritesStore
+        )
+    }
+    
+    // MARK: - SceneDelegate Conformances
 
     func sceneDidDisconnect(_ scene: UIScene) {}
 
