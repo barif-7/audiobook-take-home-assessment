@@ -21,16 +21,27 @@ final class PodcastListFeature: RootFeature {
         self.favoritesStore = favoritesStore
     }
     
-    // MARK: - Constructors
+    // MARK: - Feature Components
+    
     private lazy var interactor: PodcastListInteractor = {
-       return PodcastListInteractor(
+       PodcastListInteractor(
         favoritesStore: favoritesStore
        )
+    }()
+    
+    private lazy var presenter: PodcastlistPresenter = {
+        PodcastlistPresenter(interactor: interactor)
+    }()
+    
+    lazy var viewController: PodcastListViewController = {
+        PodcastListViewController(
+            presenter: presenter
+        )
     }()
     
     // MARK: - RootFeature Conformance
     
     func make() -> UIViewController {
-        return UIViewController()
+        return viewController
     }
 }
