@@ -19,7 +19,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         // TODO: - Build any dependencies to inject as HomeViewController will be the single source of truth & the point of entry for any feature class.
-        let rootVC = HomeViewController()
+        
+        let rootFeature: RootFeature = PodcastListFeature()
+        
+        let rootVC = HomeViewController(
+            rootFeature: rootFeature
+        )
         window.rootViewController = rootVC
         self.window = window
         
