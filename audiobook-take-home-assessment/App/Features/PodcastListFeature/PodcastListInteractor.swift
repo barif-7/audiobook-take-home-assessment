@@ -18,7 +18,7 @@ protocol PodcastListInteractorInterface: AnyObject {
 final class PodcastListInteractor: PodcastListInteractorInterface {
     // MARK: - Data Store
     
-    private var dataStore: [Podcast] = []
+    @Published var dataStore: [Podcast] = []
     
     // MARK: - Dependencies
     
@@ -27,20 +27,30 @@ final class PodcastListInteractor: PodcastListInteractorInterface {
     // MARK: - Favorites Cache
     
     private var favorites: Set<String> = []
-    var currentFavorites: Set<String> { favorites }
+    @Published var currentFavorites: Set<String> = []
+    
+    private let eventSubject: PassthroughSubject<PodcastListEvent, Never>
     
     // MARK: - Init
     init(
-        favoritesStore: FavoritesStoreInterface
+        favoritesStore: FavoritesStoreInterface,
+        eventSubject: PassthroughSubject<PodcastListEvent, Never>
     ) {
         self.favoritesStore = favoritesStore
+        self.eventSubject = eventSubject
     }
     
     func handle(_ event: PodcastListEvent) {
         switch event {
-        case .didSelectPodcast(let id): print(id)
+        case .didSelectPodcast(let id):
+            guard let podcast = dataStore.first(
+                where: { $0.id == id }
+            ) else {
+                return
+            }
+            eventSubject.send(.selectedPodcast(podcast: podcast))
         case .loadNextPageRequested: break
-        case .selectedPodcast(_): break
+        case .selectedPodcast(_): break // Handled by the feature.
         }
     }
 }
