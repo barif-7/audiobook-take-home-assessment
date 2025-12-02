@@ -10,22 +10,21 @@ import Foundation
 struct PodcastListHTTPAction: HTTPAction {
     typealias Response = APIPodcastListResponse
 
+    private let baseURL: URL = URL(string: "https://listen-api-test.listennotes.com/api/v2/")!
+    
     let request: URLRequest
     
     init(
-        baseURL: URL,
         apiKey: String,
-        genreId: Int,
-        page: Int
+        query: String
     ) {
         var components = URLComponents(
-            url: baseURL.appendingPathComponent("best_podcasts"),
+            url: baseURL.appendingPathComponent("search"),
             resolvingAgainstBaseURL: false
         )!
 
         components.queryItems = [
-            URLQueryItem(name: "genre_id", value: String(genreId)),
-            URLQueryItem(name: "page", value: String(page))
+            URLQueryItem(name: "q", value: query)
         ]
 
         var req = URLRequest(url: components.url!)
